@@ -96,3 +96,39 @@ nav {
 
 
 /* end header */
+/* ------------------------------------------------------------------------------------------------------- */
+/* <!-- start box --> */
+
+.box-input{
+    background-color: #DDC7BB;
+    height: 140px;
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position:absolute;
+    margin-top: -90px;
+}
+.box-input form input{
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    margin: 25px;
+}
+.box-input form button {
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: #2B1B12;
+    color: white;
+
+}
+
+
+/* <!-- start box --> */
+
