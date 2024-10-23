@@ -798,67 +798,66 @@
 
 
 
+/* <<<<<<< hamza */
+/* le css de page testimonials */
+#testimonials{
+padding: 0px 0px;
+}
+#testimonials body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 1%;
+    margin: 0px 0px;
+}
 
+#testimonials body header{
+width: 100%;
+height: 70px;
+position: fixed;
+background-color: blueviolet;
+grid-column:1/19;
+grid-row: 1/4;
+display: grid;
+grid-template-columns: repeat(18,1fr);
+grid-template-rows: repeat(auto,1fr);
+}
+#testimonials body header img{
+    grid-column: 2/5;
+    grid-row:1/3;
+    width:4.7rem;
+}
+#testimonials body header nav{
+    grid-column: 9/17;
+    grid-row:2/3;
+    width:5rem;
+    display: flex;
+    justify-content:space-between;
+    /* border: solid 1px; */
+    width: 100%;
+  
+}
+#testimonials body header nav a {
+   color: black;
+   text-decoration: none;
+}
+#testimonials body header nav input {
+   color:#fff;
+   outline: none;
+   background-color:black;
+   border-radius:10%;
+   width: 10%;
+   height: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#testimonials body main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(auto,1fr);
+}
+/* ======= */
 
 
 
