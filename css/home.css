@@ -31,8 +31,9 @@ header .logo h1 {
 nav{
     width: 100%;
     position: fixed;
-    background: transparent;
+    /* background: transparent; */
     background-color: #DBBBDD;
+    opacity: 1;
 }
 
 nav .nav_nav{
@@ -70,7 +71,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
    
-    background-color: #f0e1ff;
+    background-color: #FEF2FD;
     padding: 0px;
     text-align: center;
     display: flex;
@@ -80,12 +81,15 @@ nav ul li a {
     margin-top: 200px;
     font-size: 36px;
     margin-bottom: 10px;
-    z-index: 2;
+    margin-right: -300px;
+    z-index: 4;
 }
 
 .hero .hero_text p {
     font-size: 18px;
     margin-bottom: 20px;
+    margin-right: -300px;
+    z-index: 4;
 }
 
 .hero img {
@@ -93,9 +97,10 @@ nav ul li a {
     max-height: 10%;
     /* height: auto; */
     opacity: 0.7;
+    z-index: 1;
 }
 
-/* Stats Section */
+/* Section */
 .stats {
     background-color: #fff;
     padding: 40px;
