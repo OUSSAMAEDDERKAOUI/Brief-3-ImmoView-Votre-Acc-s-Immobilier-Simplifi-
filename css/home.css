@@ -1,65 +1,106 @@
-/* General Styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    width: 100%;
 }
 
-/* Header Styles */
+/* style of header */
 header {
     background-color: #fafafa;
-    padding: 10px 20px;
-    display: flex;
+    /* padding: 10px 20px; */
+    display: block;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header .logo h1 {
     margin: 0;
+    /* margin-top: 90px; */
     font-size: 24px;
+}
+/* style of navbar */
+
+nav{
+    width: 100%;
+    position: fixed;
+    /* background: transparent; */
+    background-color: #DBBBDD;
+    opacity: 1;
+}
+
+nav .nav_nav{
+    /* margin-top: ; */
+    width: 100%;
+    display: flex;
+    
+}
+
+nav .nav_nav .logo{
+    margin-left: 8%;
 }
 
 nav ul {
+    margin-top: 2%;
     list-style: none;
-    margin: 0;
+    margin-left: 50%;
     padding: 0;
     display: flex;
     gap: 20px;
+
 }
 
 nav ul li {
     display: inline;
+    margin-left: 10%;
 }
 
 nav ul li a {
     text-decoration: none;
+    font-weight:bold ;
     color: #333;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #f0e1ff;
-    padding: 40px;
+   
+    background-color: #FEF2FD;
+    padding: 0px;
     text-align: center;
+    display: flex;
 }
 
-.hero h2 {
+.hero .hero_text h2 {
+    margin-top: 200px;
     font-size: 36px;
     margin-bottom: 10px;
+    margin-right: -300px;
+    z-index: 4;
 }
 
-.hero p {
+.hero .hero_text p {
     font-size: 18px;
     margin-bottom: 20px;
+    margin-right: -300px;
+    z-index: 4;
 }
 
 .hero img {
-    max-width: 100%;
-    height: auto;
+    max-width: 70%;
+    max-height: 10%;
+    /* height: auto; */
+    opacity: 0.7;
+    z-index: 1;
 }
 
-/* Stats Section */
+/* Section */
 .stats {
     background-color: #fff;
     padding: 40px;
@@ -93,7 +134,7 @@ nav ul li a {
 
 /* Footer General Styles */
 footer {
-    background-color: #e2b0f5;
+    background-color: #DBBBDD;
     padding: 40px 20px;
     color: #333;
 }
