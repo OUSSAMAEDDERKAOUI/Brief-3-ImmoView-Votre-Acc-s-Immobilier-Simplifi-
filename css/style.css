@@ -833,7 +833,6 @@
         width:5rem;
         display: flex;
         justify-content:space-between;
-        /* border: solid 1px; */
         width: 100%;
       
     }
@@ -858,14 +857,12 @@
         display: grid;
         grid-template-columns: repeat(18,1fr);
         grid-template-rows: repeat(auto,1fr);
-        /* background-color: hsl(287, 65%, 79%);
-        background-size: cover; */
     }
     #testimonials body main .backrounge-color{
         background-color:hsl(287, 65%, 79%);
         background-size:cover;
         width: 100%;
-        height: 100%;
+        height: auto;
         grid-row: 1/15;
         grid-column:1/19;
         border: solid 2px;
@@ -885,11 +882,38 @@
     #testimonials body main .backrounge-color h1 {
         grid-column: 4/7;
         grid-row: 9/10;
+        color: #fff;
+        font-size: 3vw;
+        text-align: center;
+    }
+    #testimonials body main .backrounge-color .backrounge-color-transparent pre {
+        color: #fff;
+        font-size: 2vw;
+        text-align: center;
+    }
+    #testimonials body main .backrounge-color .backrounge-color-transparent{
+        grid-column: 9/16;
+        grid-row: 8/13;
         width: 100%;
-        height: auto;
+        height: 78%;
         border-radius:4%;
         border: solid 1px;
-        color: #fff;
-        font-size: 3rem;
-
+        color: #ffffff;
+        background-color: rgba(00, 00, 00, 0.5);
+        padding: 0% 4%;
+    }
+    #testimonials body main .backrounge-color-item{
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        background-size:cover;
+        border:solid 1px ;
+        grid-row: 10/20;
+        grid-column:3/17;
+    }
+    #testimonials body main .backrounge-color-item section{
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        background-color:  hsl(287, 65%, 79%);
     }
