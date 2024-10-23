@@ -1,3 +1,21 @@
-body {
-    font-family: "Poppins", serif;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(247, 241, 239);
+}
+nav{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+#logo{
+    width: 3rem;
 }
