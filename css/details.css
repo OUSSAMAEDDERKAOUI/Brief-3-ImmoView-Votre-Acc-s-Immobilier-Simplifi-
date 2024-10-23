@@ -3,12 +3,14 @@
     padding: 0;
 }
 body{
-    background-color: rgb(247, 241, 239);
+    background-color: #FEE9E7;
 }
 nav{
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2rem;
+   
 }
 a{
     color: black;
@@ -18,4 +20,40 @@ a{
 }
 #logo{
     width: 3rem;
+}
+header{
+    padding-bottom: 5rem;
+}
+.title{
+    background-color: #DBBBDD;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    margin-left: 35%;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px 5px;
+}
+.textbody1{
+    background-color: blue;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.textbody2{
+    background-color: aqua;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.headbody{
+    display: flex;
+    justify-content: space-around;
+}
+#main-image{
+  height: 30rem;
 }
