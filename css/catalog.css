@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: "Poppins", serif;
 }
@@ -13,7 +14,7 @@ body {
     position: relative;
     z-index: 1;
     padding: 25px;
-    height: 50vh;
+    height: auto;
 
 }
 
@@ -52,42 +53,51 @@ header {
     margin: 0;
     padding: 0;
 }
-.center-title{
+
+.center-title {
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: center;
 }
-.title{
+
+.title {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     align-items: center;
     justify-self: center;
-    
+
 }
-.title h1{
- font-weight: 600;
- font-size: 50px;
- letter-spacing: 3px;
- max-width: 100%;
- color: #1E1E1E;
+
+.title h1 {
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 3px;
+    max-width: 100%;
+    color: #1E1E1E;
+    margin: auto;
 }
+
 .title h3 {
     letter-spacing: 1.4px;
-    padding-bottom: 45px ;
+    padding-bottom: 45px;
     color: #1E1E1E;
 
 }
-.button-header{
+
+.button-header {
     border: 5px;
     width: 120px;
     height: 40px;
-    border-radius: 8px; ;
+    border-radius: 8px;
+    ;
     background-color: #2B1B12;
     color: white;
+    cursor: pointer;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -96,3 +106,162 @@ nav {
 
 
 /* end header */
+/* ------------------------------------------------------------------------------------------------------- */
+/* <!-- start box --> */
+
+.box-input {
+    background-color: #DDC7BB;
+    height: 140px;
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -90px;
+}
+
+.box-input form input {
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    margin: 25px;
+}
+
+.box-input form button {
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: #2B1B12;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* <!-- end box --> */
+
+/* start main  */
+main {
+    width: calc(70% + 150px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.our-catalog {
+    margin: 50px;
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 , auto);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+.card {
+    grid-column: span 1 ;
+    grid-row: auto;
+    background-color: #DBBBDD;
+    border-radius: 18px;
+    margin-bottom: 19px;
+    color: #4F3527;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 18px;
+}
+.title-icon {
+    display: flex;
+}
+
+.title-icon img {
+    margin: 8px;
+}
+
+.room-distance {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+
+}
+
+.room-distance img {
+    margin: 5px;
+    background-color: white;
+
+}
+
+.room-distance h3 {
+    margin-right: 40px;
+}
+
+.button-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.button-price button{
+    margin-right: 140px;
+    width: 98px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    background-color: #2B1B12;
+    color: white;
+    cursor: pointer;
+
+
+}
+/* start last-box */
+.last-box{
+    width: 29vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+.last-box input {
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    background-color: #DBBBDD;
+}
+.last-box button{
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 95px;
+    height: 40px;
+    background-color: #2B1B12;
+    color: white;
+    cursor: pointer;
+    position : absolute
+
+}
+.last-box input::placeholder{
+    color: #4F3527;
+    font-size: large;
+}
+/* END last box */
+/* -------------------------------------------------------------------------------------- */
+/* :start footer */
+
+
+/* End footer */
+/* End main  */
