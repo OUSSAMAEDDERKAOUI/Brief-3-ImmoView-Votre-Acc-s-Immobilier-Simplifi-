@@ -1385,7 +1385,7 @@ header .logo h1 {
 }
 /* style of navbar */
 
-nav{
+ .navbar_home{
     width: 100%;
     position: fixed;
     /* background: transparent; */
@@ -1393,19 +1393,19 @@ nav{
     opacity: 1;
 }
 
-nav .nav_nav{
+.navbar_home .nav_nav{
     /* margin-top: ; */
     width: 100%;
     display: flex;
     
 }
 
-nav .nav_nav .logo{
+.navbar_home .nav_nav .logo{
     margin-left: 8%;
     z-index: 5;
 }
 
-nav ul {
+.navbar_home ul {
     margin-top: 2%;
     list-style: none;
     margin-left: 50%;
@@ -1415,12 +1415,12 @@ nav ul {
 
 }
 
-nav ul li {
+.navbar_home ul li {
     display: inline;
     margin-left: 10%;
 }
 
-nav ul li a {
+.navbar_home ul li a {
     text-decoration: none;
     font-weight:bold ;
     color: #2B1B12;
@@ -1446,16 +1446,20 @@ nav ul li a {
 }
 
 .hero .hero_text p {
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 20px;
     padding-right: 50px;
     z-index: 2;
 }
 
+.hero .images{
+    margin-block:auto ;
+}
 .hero .images img {
     opacity: 0.7;
     border-radius: 10px;
     z-index: 1 !important;
+    
 }
 
 .home_box{
@@ -1468,9 +1472,11 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 .home_box h1{
-    justify-content: center;
+    font-size: xx-large;
+    font-size: 90px;
 }
 /* Section */
 main{
