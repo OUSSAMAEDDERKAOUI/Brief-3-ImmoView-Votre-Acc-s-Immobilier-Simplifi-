@@ -1445,27 +1445,26 @@ header .logo h1 {
 }
 
 .hero .hero_text{
-
+    /* display: flex; */
     margin-top: 0;
 }
 
 
 .hero .hero_text h2 {
-    margin-top: 200px;
-    font-size: 46px;
-    margin-bottom: 10px;
-    padding-right: 50px;
+    margin-top: 25vh;
+    font-size: 4rem;
+    margin-bottom: 3vh;
     z-index: 4;
     color: #2B1B12;
 }
 
 .hero .hero_text p {
-    font-size: 25px;
-    margin-top: 10px;
-    padding-right: 50px;
+    font-size: 1.5rem;
+    margin-top: 2vh;
     z-index: 2;
-    font-weight: bold;
     color: #2B1B12;
+    width: 700px;
+    margin-left: 5vw;
 }
 
 .hero .images{
@@ -1491,10 +1490,12 @@ header .logo h1 {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    
 }
 .home_box h1{
     font-size: xx-large;
     font-size: 90px;
+    color: #4F3527; 
 }
 /* Section */
 main{
@@ -1517,7 +1518,7 @@ main{
 }
 
 /* le text du 1er section de main */
-.stats .stat-boxes pre {
+.stats .stat-boxes p {
     font-size: 18px;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -1571,7 +1572,7 @@ main{
     grid-template-columns: repeat(4, 20vw); 
     grid-template-rows: repeat(3, 1fr); 
     width: 95vw;
-    gap: 2vw;
+    column-gap: 2vw;
     margin-left: 5%;
 }
 
@@ -1668,7 +1669,7 @@ main{
 }
 /* popular resedences */
 .sect_popu_tit{
-    grid-column: 2 / 4; /* Cela couvre les colonnes 1 et 2 */
+    grid-column: 2 / 4;
     grid-row: 3; 
     display: flex;
     justify-content: center;
@@ -1683,40 +1684,40 @@ main{
         color: #4F3527;  
 }
 
-.grid-section{
+.grid-section_home{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3 , auto);
-    gap: 6vw;
-    margin-top: 10px;
+    column-gap: 6vw;
+    margin-top: 10vh;
     width: 90%;
     margin-left: 5%;
 }
 
 
 
-.card {
+.card_home {
     grid-column: span 1 ;
     grid-row: auto;
     background-color: #DBBBDD;
-    border-radius: 18px;
-    margin-bottom: 19px;
+    border-radius: 15px;
+    /* margin-bottom: 9vh; */
     color: #4F3527;
 }
 
-.card-img img{
+.card_home .card-img img{
     width: 100%;
-    border-radius: 18px;
+    border-radius: 15px 15px 0 0;
 }
-.title-icon {
+.card_home .title-icon {
     display: flex;
 }
 
-.title-icon img {
+.card_home .title-icon img {
     margin: 8px;
 }
 
-.room-distance {
+.card_home .room-distance {
     display: flex;
     align-items: center;
     margin-left: 5px;
@@ -1724,29 +1725,29 @@ main{
 
 }
 
-.room-distance img {
+.card_home .room-distance img {
     margin: 5px;
     background-color: white;
 
 }
 
-.room-distance h3 {
-    margin-right: 40px;
+.card_home .room-distance h3 {
+    margin-right: 5vw;
 }
 
-.button-price {
+.card_home .button-price {
     width: 100%;
     display: flex;
     align-items: center;
 }
 .button-price button{
-    margin-right: 140px;
-    width: 98px;
-    height: 40px;
+    margin-right: 11vw;
+    width: 7vw;
+    height: 5vh;
     border-radius: 8px;
     border: none;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
     background-color: #2B1B12;
     color: white;
     cursor: pointer;
@@ -1890,7 +1891,6 @@ footer {
     color: #333;
 }
 
-/* Footer Columns */
 .footer-links {
     flex: 3;
     display: flex;
