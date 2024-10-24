@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,8 @@ body {
 }
 
 .container {
-    width: 70vw;
+    width: 100%;
+    max-width: 1114px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -19,6 +21,30 @@ body {
     height: auto;
 
 }
+
+.box .container {
+    width: 95%;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.box .input-search {
+    width: 100%;
+}
+
+.box form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 40px;
+ }
+
+.nav-bar {
+    position: relative;
+}
+
+
 
 /* start header  */
 .header-cata {
@@ -57,7 +83,7 @@ body {
 } */
 /* ------------------------------------------------------------ */
 .nav-bar {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .nav-bar ul {
 list-style-type: none;
@@ -74,8 +100,8 @@ list-style-type: none;
   }
   
 .nav-bar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #000;
+    color: #fff;
   }
   
   .nav-bar a.active {
@@ -98,18 +124,27 @@ list-style-type: none;
     .nav-bar a {
         display: none;
     }
-    
+    .menu-links {
+        position: absolute;
+        top: 40px;
+        right: 0;
+     }
 
     
     .nav-bar.responsive {
         position: relative;
-        background-color: #DBBBDD;
 
     }
-    .nav-bar.responsive .icon {
+    /* .nav-bar.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
+    } */
+    .nav-bar.responsive .menu-links {
+        position: absolute;
+        top: 50px;
+        background-color: #dbbbdd;
+        right: 0;
     }
     .nav-bar.responsive a {
       float: none;
@@ -229,7 +264,6 @@ nav {
     text-align: center;
     width: 240px;
     height: 40px;
-    margin: 25px;
 }
 
 .box-input form button {
@@ -260,83 +294,13 @@ main {
     text-align: center;
         
 }
-@media  (max-width: 768px) {
-    .our-catalog {
-        margin: 50px;
-        font-size: small;
-        font-weight: 500;
-        text-align: center;
-            
-    }
-    .grid-section{
-        display: grid;
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows: repeat(3 , auto);
-        gap: 10px;
-        margin-top: 10px;
-    }
-    
-    
-    
-    .card {
-        grid-column: span 1 ;
-        grid-row: auto;
-        background-color: #DBBBDD;
-        border-radius: 18px;
-        margin-bottom: 19px;
-        color: #4F3527;
-        margin-inline: 55px;
-    }
-    
-    .card-img img{
-        width: 100%;
-        border-radius: 18px;
-    }
-    .title-icon {
-        display: flex;
-    }
-    
-    .title-icon img {
-        margin: 8px;
-    }
-    
-    .room-distance {
-        display: flex;
-        align-items: center;
-        margin-left: 5px;
-    
-    
-    }
-    
-    .room-distance img {
-        margin: 5px;
-        background-color: white;
-    
-    }
-    
-    .room-distance h3 {
-        margin-right: 40px;
-    }
-    
-    .button-price {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .button-price button{
-        margin-right: 140px;
-        width: 98px;
-        height: 40px;
-        border-radius: 8px;
-        border: none;
-        margin-bottom: 15px;
-        margin-left: 10px;
-        background-color: #2B1B12;
-        color: white;
-        cursor: pointer;
-    }
+
+
     /* ----------------------END media card----------------------------- */
-}
+
+    
+    
+
 /* -----------------end me------------------------ */
 .grid-section{
     display: grid;
@@ -344,6 +308,35 @@ main {
     grid-template-rows: repeat(3 , auto);
     gap: 10px;
     margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    }
+}
+@media (max-width: 768px) {
+    .our-catalog {
+        margin: 50px;
+        font-size: small;
+        font-weight: 500;
+        text-align: center;
+    }
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Une seule colonne */
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .card {
+        grid-column: span 1;
+        grid-row: auto;
+        background-color: #DBBBDD;
+        border-radius: 18px;
+        margin-bottom: 19px;
+        color: #4F3527;
+        margin-inline: 55px;
+    }
 }
 
 
@@ -501,9 +494,7 @@ main {
         font-size: large;
     }
     /* END last box */
-    .footer-catalog{
-        display: none;
-    }
+   
 }
 /* -------------------------------------------------------------------------------------- */
 /* :start footer */
@@ -547,6 +538,19 @@ main {
     margin: 15px 5px;
     
 }
+@media  (max-width: 768px) {
+    .desc-card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+    }
 
+     
+    
+}
 /* End footer */
 /* End main  */
