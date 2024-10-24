@@ -16,7 +16,7 @@ body{
    }
 
   /*BURGER END*/
-@media only screen and (max-width: 600px) {   
+@media only screen and (max-width: 768px) {   
       #main-image{
         display: none;
       }
