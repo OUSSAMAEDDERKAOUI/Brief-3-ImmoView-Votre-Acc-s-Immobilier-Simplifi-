@@ -16,7 +16,8 @@ body{
    }
 
   /*BURGER END*/
-@media only screen and (max-width: 768px) {   
+
+  @media only screen and (max-width: 768px) {   
       #main-image{
         display: none;
       }
@@ -26,8 +27,36 @@ body{
      #buger{
         display: block;
      }  
-  }
+     .textbody1, .textbody2, .textbody3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+     .gallery {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 
+    .textbody1, .textbody2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .textbody3{
+        background-color: #FCC9FF;
+    width: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 7.4rem;
+    }
+  .footer-section{
+    display: none;
+  }
+    .headbody {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  }
   /* RESPONSIVE*/
 /* navigation bar style*/
 nav{
