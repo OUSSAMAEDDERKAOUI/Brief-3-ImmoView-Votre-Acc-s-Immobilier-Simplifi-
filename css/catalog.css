@@ -538,7 +538,8 @@ main {
     margin: 15px 5px;
     
 }
-@media  (max-width: 768px) {
+
+@media  (max-width: 970px) {
     .desc-card{
         width: 100%;
         max-width: 100%;
@@ -547,9 +548,31 @@ main {
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-evenly;
+        gap: 0;
     }
 
      
+    
+}
+@media  (max-width: 780px) {
+    .desc-card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .card-footer,
+    .card-social-media{
+        width: 50%;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .card-social-media div {
+        justify-content: center;
+        
+    }
     
 }
 /* End footer */
