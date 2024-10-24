@@ -1054,4 +1054,9 @@
         width: 9vw;
         /* width: 90%; */
     }
-   
+    #testimonials footer{
+        grid-column: 1/19;
+        grid-row: 100/150;
+        background-color: #000;
+        background-size: cover;
+    }
