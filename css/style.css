@@ -846,8 +846,8 @@
        outline: none;
        background-color:black;
        border-radius:10%;
-       width: 10%;
-       height: auto;
+       width: auto;
+       height: 100%;
     }
     
     #testimonials body main {
@@ -911,12 +911,33 @@
         border:solid 1px ;
         grid-row: 10/20;
         grid-column:3/17;
+        border: solid 1px;
+        
+        display: block;
+        justify-content: space-between;
+
     }
     #testimonials body main .backrounge-color-item section{
         width: 100%;
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(18,1fr);
+        grid-template-rows: repeat(18,1fr); /* ???????????????????????????????????????????????????????? */
         justify-content: space-between;
         background-color:  hsl(287, 65%, 79%);
+        background-size:cover;
+        border: solid 1px;
+
+        
+        /* background-color:  hsl(287, 65%, 79%); */
     }
+    #testimonials body main .backrounge-color-item section  img:nth-of-type(1){
+       grid-column:2/5;
+        grid-row: 2/5;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+
 =======
 >>>>>>> 5b26c66039ff1362281d8ee1add98c7a06d2c966
