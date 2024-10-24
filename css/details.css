@@ -8,25 +8,28 @@ body{
 }
 
 
+/*RESPOSIFE */
+  /* buger*/
+   #buger{
+    width: 3rem;
+    display: none;
+   }
 
-@media only screen and (max-width: 600px) {
+  /*BURGER END*/
+@media only screen and (max-width: 600px) {   
       #main-image{
         display: none;
       }
-      #arrowbut1{
-        display: none;
-      }
-      #arrowbut2{
-        display: none;
-
-      }
       .navlist{
         display: none;
-        
-      }
+     }
+     #buger{
+        display: block;
+     }  
   }
 
-
+  /* RESPONSIVE*/
+/* navigation bar style*/
 nav{
     margin-top: 1rem;
     display: flex;
@@ -43,6 +46,7 @@ a{
 #logo{
     width: 3rem;
 }
+
 header{
     padding-bottom: 5rem;
 }
@@ -50,6 +54,7 @@ header{
     display: flex;
     justify-content: center;
 }
+/* style titre de bien*/
 .title{
     background-color: #DBBBDD;
     padding: 1rem;
@@ -60,6 +65,7 @@ header{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* style de de carte des text*/
 .textbody1{
     background-color: #FCC9FF;
     width: 50vh;
@@ -94,6 +100,7 @@ header{
     display: flex;
     justify-content: space-around;
 }
+
 #main-image{
   height: 30rem;
   border-radius: 10px;
