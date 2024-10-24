@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -14,21 +19,38 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-cata">
         <div class="overlay"></div>
         <div class="container">
+
             <nav>
+               
                 <div class="logo">
                     <img src="../assets/imgs-catalog/logo.png" alt="logo">
                 </div>
-                <div class="nav-bar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="catalog.html">Catalog</a></li>
-                        <li> <a href="details.html">Details</a></li>
-                        <li><a href="Testimonials.html"> Testimonials</a></li>
-                    </ul>
+                <div class="nav-bar" id="myTopnav">
+                    
+                        <a href="index.html">Home</a>
+                        <a href="catalog.html">Catalog</a>
+                         <a href="details.html">Details</a>
+                        <a href="Testimonials.html"> Testimonials</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                
                 </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "nav-bar") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav-bar";
+                      }
+                    }
+                    </script>
+                    
+               
             </nav>
             <div class="center-title">
                 <div class="title">
@@ -38,7 +60,6 @@
                     <button class="button-header" type="submit">Sign up</button>
                 </div>
             </div>
-
         </div>
     </header>
     <!-- start box -->
@@ -62,7 +83,7 @@
     <main>
         <div class="container">
             <div class="our-catalog">
-                Our Residences
+               <h1>Our Residences</h1> 
             </div>
         </div>
         <section class="grid-section">
@@ -250,12 +271,12 @@
                 </form>
             </div>
         </SECTion>
-            <!-- End last box -->
+        <!-- End last box -->
 
     </main>
-        <!-- End main  -->
-<!-- start footer -->
-    <FOOter>
+    <!-- End main  -->
+    <!-- start footer -->
+    <footer class="footer-catalog">
         <SECTion class="container-footer">
             <div class="desc-card">
                 <div class="footer-logo">
@@ -308,14 +329,11 @@
             </div>
 
         </SECTion>
-    </FOOter>
+    </footer>
 
-<!-- End footer -->
+    <!-- End footer -->
 
 
 </body>
 
 </html>
-
-
-
