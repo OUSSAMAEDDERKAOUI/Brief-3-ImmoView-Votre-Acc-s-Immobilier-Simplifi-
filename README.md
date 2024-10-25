@@ -1,4 +1,6 @@
 
+
+
 # ImmoView - Your Ultimate Real Estate Platform
 Description
 ImmoView revolutionizes the way you search and purchase real estate properties by offering a seamless, responsive, and optimized user experience across all devices. Our platform combines intuitive design, interactive features, and accessibility to make your real estate journey smooth and efficient. From zoning and wireframes to final deployment on GitHub Pages, ImmoView is designed to provide you with the best in class service for all your property needs.
