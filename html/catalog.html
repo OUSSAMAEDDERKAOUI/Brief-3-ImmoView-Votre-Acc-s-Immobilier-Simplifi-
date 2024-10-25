@@ -1,17 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Catalog page</title>
     <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../responsive/catalog-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="ImmoView vous aide à trouver la maison de vos rêves parmi une sélection exclusive de propriétés. Explorez notre catalogue et bénéficiez des meilleures offres immobilières avec l'aide de nos agents de confiance." />
+
+
 </head>
+
 <body>
-    <div>
-        yes for 
-    </div>
+    <header class="header-cata" data-aos="flip-left">
+        <div class="overlay"></div>
+        <div class="container">
+
+            <nav>
+               
+                <div class="logo">
+                    <img src="../assets/imgs-catalog/logo.png" alt="logo">
+                </div>
+                <div class="nav-bar" id="myTopnav">
+                    
+                        <div class="menu-links">
+                            <a href="index.html">Home</a>
+                            <a href="catalog.html">Catalog</a>
+                             <a href="details.html">Details</a>
+                            <a href="Testimonials.html"> Testimonials</a>
+                        </div>
+                        <a href="#menu" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                
+                </div>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "nav-bar") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav-bar";
+                      }
+                    }
+                    </script>
+                    
+               
+            </nav>
+            <div class="center-title">
+                <div class="title">
+                    <h1>Find Your Dream Home</h1>
+                    <h3>Discover our handpicked collection of stunning properties designedto bring your dream home
+                        vision to life.</h3>
+                    <button class="button-header" type="submit">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- start box -->
+    <section class="box" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+        <div class="container">
+            <div class="box-input">
+                <div class="input-search">
+                    <form>
+                        <input type="text" placeholder="Location" required autofocus>
+                        <input type="text" placeholder="Type" required>
+                        <input type="text" placeholder=" Price Range">
+                        <button type="submit"> Searsh</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end box -->
+    <!-- start main  -->
+
+    <main>
+        <div class="container">
+            <div class="our-catalog ">
+               <h1>Our Residences</h1> 
+            </div>
+        </div>
+        <section class="grid-section">
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-1.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>San Francisco, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>4 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>3,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$2,500,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-2.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>Beverly Hills, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>4 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>3,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$8,800,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-3.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>Palo Alto, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>6 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>4,000 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$3,700,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-4.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>Palo Alto, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>4 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>6,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$12,500,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-5.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>San Pedro, Texas </h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>3 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>2,900 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$12,500,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-6.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>Texas City, Texas</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>4 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>3,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$12,300,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-7.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>San Francisco, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>2 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>3,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$5,500,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-8.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>Best Western Texas City </h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>7 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>3,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$2,500,000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" data-aos="zoom-in">
+                    <img src="../assets/imgs-catalog/card-9.png" alt="img-card-1">
+                </div>
+                <div class="title-icon">
+                    <img src="../assets/imgs-catalog/location.png" alt="location-logo">
+                    <h2>San Francisco, California</h2>
+                </div>
+                <div class="room-distance">
+                    <img src="../assets/imgs-catalog/rooms.png" alt="room-logo">
+                    <h3>4 Rooms</h3>
+                    <img src="../assets/imgs-catalog/size.png" alt="size-logo">
+                    <h3>2,500 sq ft</h3>
+                </div>
+                <div class="button-price">
+                    <button type="submit">More</button>
+                    <h3>$3,580,000</h3>
+                </div>
+            </div>
+            <!-- start last box -->
+        </section>
+        <SECTion class="last-box" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+            <div class="asking">
+                <h1>Do You Have Any Questions? Get Help From Us</h1>
+            </div>
+            <div class="form-last-box">
+                <form>
+                    <input type="email" placeholder="Enter your email address...">
+                    <BUtton>Submit</BUtton>
+                </form>
+            </div>
+        </SECTion>
+        <!-- End last box -->
+
+    </main>
+    <!-- End main  -->
+    <!-- start footer -->
+    <footer class="footer-catalog">
+        <SECTion class="container-footer">
+            <div class="desc-card">
+                <div class="footer-logo">
+                    <img src="../assets/imgs-catalog/logo.png" alt="principale logo of main page">
+                </div>
+                <p> Bringing you closer to your dream home, one click at a time.</p>
+
+            </div>
+            
+                <div class="card-footer">
+                    <h2>About</h2>
+                    <ul>
+                        <li>Our Story</li>
+                        <li>Careers</li>
+                        <li>Our Team</li>
+                        <li>Resources</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Help Center</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+           
+            
+       
+                <div class="card-footer">
+                    <h2>Find Us</h2>
+                    <ul>
+                        <li>Events</li>
+                        <li>Locations</li>
+                        <li>Newsletter</li>
+                    </ul>
+                </div>
+                <div class="card-social-media">
+                    <h2>Our Social</h2>
+                    <div>
+                        <img src="../assets/imgs-catalog/insta.png" alt="instagram image">
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <img src="../assets/imgs-catalog/fb.png" alt="facebook image ">
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <img src="../assets/imgs-catalog/twitter.png" alt="twitter">
+                        <p>twitter(X)</p>
+                    </div>
+           
+          
+
+            </div>
+
+        </SECTion>
+    </footer>
+
+    <!-- End footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                once: true,
+                duration: 1000
+            }
+        );
+      </script>
+
 </body>
+
 </html>

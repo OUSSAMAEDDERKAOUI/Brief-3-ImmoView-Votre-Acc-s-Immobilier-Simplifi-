@@ -1,149 +1,15 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Réinitialisation des marges et des paddings pour tous les éléments */
- *{
+*{
     margin: 0;
     padding: 0;
 }
-   .body-1{
+   body{
     background-color: #FEE9E7;
     font-family: Arial, sans-serif;
 }
 
 /* navigation bar style*/
- .nav-1{
+ nav{
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
@@ -151,22 +17,16 @@
    
 }
 /* Style des liens de navigation */
-.navlist a{
+  a{
     color: black;
     font-weight: bold;
     text-decoration: none;
     padding: 1rem;
 }
-.navlist2 a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem;
-}
- #logo-1{
+ #logo{
     width: 3rem;
 }
- .header-1{
+ header{
     padding-bottom: 5rem;
 }
 .main-header{
