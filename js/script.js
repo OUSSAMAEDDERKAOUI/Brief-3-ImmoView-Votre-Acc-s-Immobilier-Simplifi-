@@ -1,3 +1,4 @@
+/* auto show images */
 var i = 0;
 var images = [];
 var time = 3000;
@@ -22,3 +23,29 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+/** end of auto show images */
+/*********************************************************************************************************** */
+
+/**BURGER MUNE */
+function burgerfonc() {
+    var w = window.innerWidth;
+    const but1 = document.getElementsByClassName("navlist2")[0];
+         if (but1.style.display === "grid") {
+             but1.style.display = "none";
+         }else{
+             but1.style.display = "grid";
+         }
+   
+}
+
+ 
+window.addEventListener('resize', function(){
+    var w = window.innerWidth;
+    const but1 = document.getElementsByClassName("navlist2")[0];
+    if (w > 768){
+       but1.style.display = "none"
+    }
+})
+
+/** end of burger mune */
+/********************************************************************************************/
