@@ -1,53 +1,32 @@
+/* Réinitialisation des marges et des paddings pour tous les éléments */
 *{
     margin: 0;
     padding: 0;
 }
-body{
+   body{
     background-color: #FEE9E7;
     font-family: Arial, sans-serif;
 }
 
-
-/*RESPOSIFE */
-  /* buger*/
-   #buger{
-    width: 3rem;
-    display: none;
-   }
-
-  /*BURGER END*/
-@media only screen and (max-width: 600px) {   
-      #main-image{
-        display: none;
-      }
-      .navlist{
-        display: none;
-     }
-     #buger{
-        display: block;
-     }  
-  }
-
-  /* RESPONSIVE*/
 /* navigation bar style*/
-nav{
+ nav{
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
    
 }
-a{
+/* Style des liens de navigation */
+  a{
     color: black;
     font-weight: bold;
     text-decoration: none;
     padding: 1rem;
 }
-#logo{
+ #logo{
     width: 3rem;
 }
-
-header{
+ header{
     padding-bottom: 5rem;
 }
 .main-header{
@@ -66,7 +45,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* style de de carte des text*/
-.textbody1{
+ .textbody1{
     background-color: #FCC9FF;
     width: 50vh;
     text-align: center;
@@ -76,7 +55,6 @@ header{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .textbody2{
     background-color: #FCC9FF;
     width: 50vh;
@@ -85,8 +63,7 @@ header{
     padding: 1rem;
     margin-top: 7.4rem;
 }
-
-.textbody3{
+ .textbody3{
     background-color: #FCC9FF;
     text-align: center;
     border-radius: 10px;
@@ -95,45 +72,44 @@ header{
     margin-bottom: 3rem;
     padding: 2rem;
 }
-
-.headbody{
+ .headbody{
     display: flex;
     justify-content: space-around;
 }
 
-#main-image{
+ #main-image{
   height: 30rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#arrowbut1{
+ #arrowbut1{
     width: 2rem;
     height: 2rem;
     margin: 1rem;
 }
-#arrowbut2{
+ #arrowbut2{
     width: 2rem;
     height: 2rem;
     margin: 1rem;
 }
 
-.info-re {
+ .info-re {
     height: 100vh;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.info-request {
+ .info-request {
     background-color: #FCC9FF;
     padding: 5rem;
     width: 25rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-#demande-info {
+/* Style du bouton de demande d'information */
+ #demande-info {
     text-align: center;
     background-color: #F99DFF;
     padding: 1rem;
@@ -141,15 +117,16 @@ header{
     text-align: center;
     border-radius: 10px;
 }
-
-.info-request input {
+ .info-request input {
     width: 100%;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.info-request button {
+
+/* Style des boutons  de info-request*/
+ .info-request button {
     background-color: black;
     color: white;
     padding: 1rem 2rem;
@@ -192,13 +169,14 @@ header{
     text-decoration: none;
     color: #000;
 }
+/* Style des icônes sociales */
 .social-icons img {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
 }
 
-
+/* Style de la galerie */
 .gallery{
  background-color: #FCC9FF;
  display: flex;
@@ -212,7 +190,7 @@ header{
  margin-left: 2rem;
  margin-right: 2rem;
 }
-
+/* Style des images de la galerie */
 .homeimg{
     width: 10rem;
     box-shadow: 0 4px 8px;
