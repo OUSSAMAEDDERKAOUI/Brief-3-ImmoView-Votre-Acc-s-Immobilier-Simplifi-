@@ -1,5 +1,5 @@
 /* Réinitialisation des marges et des paddings pour tous les éléments */
- *{
+*{
     margin: 0;
     padding: 0;
 }
@@ -195,9 +195,7 @@
     width: 10rem;
     box-shadow: 0 4px 8px;
 }
-
-
-.carousel-cell{
+ .carousel-cell{
     width: 70%;
     counter-increment: carousel-cell;
   }
