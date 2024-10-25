@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ImmoView vous aide à trouver la maison de vos rêves parmi une sélection exclusive de propriétés. Explorez notre catalogue et bénéficiez des meilleures offres immobilières avec l'aide de nos agents de confiance." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/responsive/responsive.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="/css/details.css">  
+ <link rel="stylesheet" href="/css/style.css">
 <title>Details page</title>
 </head>
-<body>
+<body class="body-1">
     <!--header-->
-    <header>
+    <header class="header-1">
         <!--navigation bar-->
-        <nav>
-          <img src="/assets/img detait/logo.png" alt="logo" id="logo">
+        <nav class="nav-1">
+          <img src="/assets/img detait/logo.png" alt="logo" id="logo-1">
            <!--buger mune-->
-   <img src="/assets/img detait/buger.png" alt="buger" id="buger">
-   <!--buger mune-->
+ 
+          <img src="/assets/img detait/burger.png" alt="buger" id="buger" onclick="burgerfonc()">
+        
+    <!--buger mune-->
         <div class="navlist">
-            <a href="">Home</a>
-            <a href="">Catalog</a>  
-            <a href="">Détails</a>
-            <a href="">Testimonial</a>
+            <a href="/html/index.html">Home</a>
+            <a href="/html/catalog.html">Catalog</a>  
+            <a href="/html/details.html">Détails</a>
+            <a href="/html/Testimonials.html">Testimonial</a>
         </div>
      </nav>
+     <!--nav bar for buger menu-->
+     <div class="navlist2">
+        <a href="/html/index.html">Home</a>
+        <a href="/html/catalog.html">Catalog</a>  
+        <a href="/html/details.html">Détails</a>
+        <a href="/html/Testimonials.html">Testimonial</a>
+    </div>
+    <!--nav bar for buger mune-->
     <!-- end of navigation bar-->
    
      <div class="main-header">
-        <div >
+         <div >
             <h1 class="title">DAR SEBTI</h1>
         </div>
      </div>
@@ -42,14 +55,29 @@
     <main>
      <div class="headbody">
        <div class="detailbody">
-        <div class="textbody1">
-            <h2>Property details</h2>
-            <H4>Palo Alto, California</H4>
-            <H4>$3,700,000</H4>
-            <H6>6 Rooms</H6>
-            <H6>500 m2</H6>
+        <div class="textbody1vmobile">
+            <div class="textbody1">
+                <h2>Property details</h2>
+                <H4>Palo Alto, California</H4>
+                <H4>$3,700,000</H4>
+                <H6>6 Rooms</H6>
+                <H6>500 m2</H6>
+            </div>
         </div>
-         <div class="textbody2">
+
+
+         <!--carosel use flickity labary-->
+
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (1).png" alt="room1"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (2).png" alt="room2"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (3).png" alt="room3"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (3).png" alt="room4"></div>
+
+        </div>
+
+        <!--carosel-->
+        <div class="textbody2">
             <p>A Gressan, à deux pas du centre d'Aoste, nous vous proposons une propriété personnalisable sur plusieurs étages, composée de 6 pièces grandes et lumineuses, une grande terrasse, un jardin exclusif parfait pour satisfaire les différents besoins d'une famille.
                 L'exposition sur 4 côtés garantit une lumière naturelle constante et une vue panoramique sur toutes les faces de la maison.
             </p>
@@ -71,7 +99,7 @@
      <!--gallery-->
        <!--text nb2-->
     <div class="textbody3">
-        <h2>a propos de quieter</h2>
+        <h2>a propos de quartier</h2>
         <br>
         <p> Le quartier où se trouve la maison est idéalement situé en plein centre-ville, <br> offrant un accès facile à toutes les commodités. Vous y <br> trouverez des boutiques, des restaurants, et des cafés animés, <br> parfaits pour profiter de la vie urbaine. <br> De plus, le quartier est bien desservi par <br>les transports en commun, facilitant vos déplacements quotidiens.</p>
       </div>
@@ -98,51 +126,69 @@
 
 </main>
 <!--end of body-->
- <!--footer-->
-        <footer>
-            <div class="footer-con">
-                <div class="footer-section">
-                    <img src="/assets/img detait/logo.png" alt="Logo" class="logo">
-                    <p>IMMOVIEW 2024</p>
-                    <p>Bringing you closer to your dream home, one click at a time.</p>
+     <!-- start footer -->
+     <footer>
+        <SECTion class="footer-con">
+            <div>
+                <div class="logo">
+                    <img src="../assets/img detait/logo.png" alt="principale logo of main page">
                 </div>
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Find Us</h3>
-                    <ul>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Social</h3>
-                    <ul class="social-icons">
-                        <li><a href="#"><img src="/assets/img detait/instagram.png" alt="Instagram">Instagram</a></li>
-                        <li><a href="#"><img src="/assets/img detait/facebook.png" alt="Facebook">Facebook</a></li>
-                        <li><a href="#"><img src="/assets/img detait/twitterx.png" alt="Twitter">Twitter</a></li>
-                    </ul>
-                </div>
+                <p> Bringing you closer to your dream home, one click at a time.</p>
+
             </div>
-        </footer>
-<!--end of footer-->
+            
+                <div class="footer-section">
+                    <h2>About</h2>
+                    <ul>
+                        <li>Our Story</li>
+                        <li>Careers</li>
+                        <li>Our Team</li>
+                        <li>Resources</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Help Center</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+           
+            
+       
+                <div class="footer-section">
+                    <h2>Find Us</h2>
+                    <ul>
+                        <li>Events</li>
+                        <li>Locations</li>
+                        <li>Newsletter</li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <h2>Our Social</h2>
+                    <div>
+                        <img src="/assets/img detait/instagram.png" alt="instagram image">
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <img src="/assets/img detait/facebook.png" alt="facebook image ">
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <img src="/assets/img detait/twitterx.png" alt="twitter">
+                        <p>twitter(X)</p>
+                    </div>
+           
+          
+
+            </div>
+
+        </SECTion>
+    </footer>
+
+    <!-- End footer -->
 <script src="/js/script.js"></script>
 
 </body>
