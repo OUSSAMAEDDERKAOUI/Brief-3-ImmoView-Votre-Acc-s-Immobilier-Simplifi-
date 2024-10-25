@@ -18,90 +18,90 @@ Open-source Community: For the tools and libraries that facilitated our work.
 
 User Testers: For their constructive feedback and valuable time.
  
+# Roles & Responsibilities
+
+## README
+
+### Design and Mockup (D & M) 🖌️
+
+#### Objectives
+- **Zoning**: Creation of a zoning layout to organize the main pages.
+- **Wireframe**: Development of wireframes.
+- **Mockup**: Design of responsive mockups for desktop and mobile.
+- **Prototyping**: Creation of interactive prototypes to validate the mockups before development.
+
+### Development 💻
+
+#### Project Structure
+- **`assets/`**: Static files (images, icons, videos).
+- **`css/`**: Style files (global, responsive, animations).
+- **`js/`**: JavaScript files (modular: e.g., `carousel.js`, `form-validation.js`).
+- **`fonts/`**: Custom fonts.
+
+#### Key Features
+- **Responsive Design**: Optimization for all devices using media queries.
+- **Burger Menu**: Functional burger menu for mobile navigation.
+- **FAQ**: FAQ section to answer common questions.
+- **Image Carousel**: Display of real estate listings.
+- **CSS Animations**: Dynamic interactions on the interface.
+- **Semantic HTML**: Use of appropriate HTML tags.
+- **Accessibility**: Compliance with ARIA standards for optimal accessibility.
+
+### Performance and Optimization ⚡
+
+- **Lighthouse Performance**: High score on Google Lighthouse for loading speed.
+- **SEO**: Meta tags and optimized HTML structure for search engine ranking.
+
+### Project Management 🛠️
+
+- **Planning via GitHub Project**: Organization and tracking of tasks.
+- **Planning Poker**: Collaborative task estimation.
+- **Branching on GitHub**: Branching system for development.
+- **Hosting**: Deployment on GitHub Pages.
+
+### Pages to Develop 📄
+
+#### Home Page
+- Selection of real estate listings with image carousel.
+- Introduction to ImmoView's mission and services offered.
+- FAQ section and links to other pages.
+  ![home](https://github.com/user-attachments/assets/dfaa4b98-acfe-4e7a-ab21-30f289586fb9)
+
+#### Catalog Page
+- List of real estate listings with filtering options.
+- Grid presentation with details for each property.
+![catalog](https://github.com/user-attachments/assets/f3a2761d-b465-4fe9-ab54-3411385ba80e)
+#### Property Details Page
+- Complete description of the property with image gallery.
+- "About the Neighborhood" section and information request form.
+![details](https://github.com/user-attachments/assets/5d2ac998-9e9a-42ef-9fa8-22dce8a7bcc6)
+#### Testimonials Page
+- Customer feedback with the option to submit testimonials.
+- Gallery of satisfied clients.
+![testimonials](https://github.com/user-attachments/assets/e594e366-a8f0-482b-babb-fe741c608ddb)
 
 
-## Rôles & Missions :
+### Screen Resolutions 📱
 
-# README
+- **Large Computer Screen**: From 1280px.
+- **Small Computer Screen**: 1024px to 1279px.
+- **Portrait Tablet**: 768px to 1023px.
+- **Mobile (portrait)**: Up to 767px.
 
-## Conception et Maquettage (D & M) 🖌️
+### BONUS 🎁
 
-### Objectifs
-- **Zoning** : Création d’un zoning pour organiser les pages principales.
-- **Wireframe** : Réalisation des wireframes.
-- **Maquettage** : Conception de maquettes responsives pour desktop et mobile.
-- **Prototypage** : Création de prototypes interactifs pour valider les maquettes avant le développement.
+- Mockups for tablet.
+- Interactivity via JavaScript.
+- 12-column grid for visual consistency.
 
-## Développement 💻
+### Educational Modalities
+- Collective work (by squad).
+- **Timeline**: 5 days.
+- **Assignment Date**: 21/10/2024 at 09:00.
+- **Submission Deadline**: 25/10/2024 before 23:59.
 
-### Structure de Projet
-- **`assets/`** : Fichiers statiques (images, icônes, vidéos).
-- **`css/`** : Fichiers de style (global, responsives, animations).
-- **`js/`** : Fichiers JavaScript (modulaires : ex. `carrousel.js`, `form-validation.js`).
-- **`fonts/`** : Polices personnalisées.
 
-### Fonctionnalités Clés
-- **Responsive Design** : Optimisation sur tous les appareils avec media queries.
-- **Burger Menu** : Menu burger fonctionnel pour la navigation mobile.
-- **FAQ** : Section FAQ pour répondre aux questions fréquentes.
-- **Carrousel d'Images** : Affichage des biens immobiliers.
-- **Animations CSS** : Interactions dynamiques sur l'interface.
-- **HTML Sémantique** : Utilisation des balises appropriées.
-- **Accessibilité** : Respect des normes ARIA pour une accessibilité optimale.
 
-## Performance et Optimisation ⚡
-
-- **Lighthouse Performance** : Score élevé sur Google Lighthouse pour la vitesse de chargement.
-- **SEO** : Balises méta et structure HTML optimisée pour le référencement.
-
-## Gestion de Projet 🛠️
-
-- **Planification via GitHub Project** : Organisation et suivi des tâches.
-- **Planning Poker** : Estimation collaborative des tâches.
-- **Branching sur GitHub** : Système de branches pour le développement.
-- **Hébergement** : Déploiement sur GitHub Pages.
-
-## Pages à Développer 📄
-
-### Page Accueil
-- Sélection de biens immobiliers avec carrousel d'images.
-- Introduction sur la mission d'ImmoView et services proposés.
-- Section FAQ et liens vers d'autres pages.
-
-### Page Catalogue
-- Liste de biens immobiliers avec options de filtrage.
-- Présentation en grille avec détails pour chaque propriété.
-
-### Page Détails du Bien
-- Description complète de la propriété avec galerie d'images.
-- Section "À propos du quartier" et formulaire de demande d'information.
-
-### Page Témoignages
-- Retours d'expérience de clients avec soumission de témoignages.
-- Galerie d'images de clients satisfaits.
-
-### Page Contact (Bonus)
-- Formulaire de contact et informations directes de l'agence.
-- Liens vers les réseaux sociaux et carte de l'emplacement.
-
-## Résolution d'Écrans 📱
-
-- **Grand Écran d'Ordinateur** : À partir de 1280px.
-- **Petit Écran d'Ordinateur** : 1024px à 1279px.
-- **Tablette Portrait** : 768px à 1023px.
-- **Mobile (portrait)** : Jusqu'à 767px.
-
-## BONUS 🎁
-
-- Maquettes pour tablette.
-- Interactivité via JavaScript.
-- Grille en 12 colonnes pour cohérence visuelle.
-
-## Modalités Pédagogiques
-- Travail collectif (par squad).
-- **Temporalité** : 5 jours.
-- **Date d'assignement** : 21/10/2024 à 09:00.
-- **Date limite de soumission** : 25/10/2024 avant 23:59.
 
 
 
