@@ -262,10 +262,10 @@
 
     .navlist2{
        display: none;
-        /*background-color: #de0d0d;
+        background-color: #de0d0d;
         justify-content: center;
-        margin: 0 auto; */
-         float: right;
+        margin: 0 auto;
+         /*float: right;
         display: block;
         color: black;
         text-align: center;
@@ -275,7 +275,7 @@
         position: absolute;
         right: 70px;
         background-color: #DBBBDD;
-        top: 55px;
+        top: 55px;*/
 
        }
     
