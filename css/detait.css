@@ -1,0 +1,197 @@
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+*{
+    margin: 0;
+    padding: 0;
+}
+   body{
+    background-color: #FEE9E7;
+    font-family: Arial, sans-serif;
+}
+
+/* navigation bar style*/
+ nav{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+   
+}
+/* Style des liens de navigation */
+  a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+ #logo{
+    width: 3rem;
+}
+ header{
+    padding-bottom: 5rem;
+}
+.main-header{
+    display: flex;
+    justify-content: center;
+}
+/* style titre de bien*/
+.title{
+    background-color: #DBBBDD;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* style de de carte des text*/
+ .textbody1{
+    background-color: #FCC9FF;
+    width: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.textbody2{
+    background-color: #FCC9FF;
+    width: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 7.4rem;
+}
+ .textbody3{
+    background-color: #FCC9FF;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+ .headbody{
+    display: flex;
+    justify-content: space-around;
+}
+
+ #main-image{
+  height: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ #arrowbut1{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+ #arrowbut2{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+ .info-re {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+ .info-request {
+    background-color: #FCC9FF;
+    padding: 5rem;
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Style du bouton de demande d'information */
+ #demande-info {
+    text-align: center;
+    background-color: #F99DFF;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+}
+ .info-request input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Style des boutons  de info-request*/
+ .info-request button {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10rem;
+}
+
+.info-request button:hover {
+    background-color: #de0d0d;
+}
+
+
+
+
+.footer-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #DBBBDD;
+    padding: 20px;
+}
+
+
+.logo {
+    width: 4rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    
+}
+
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+/* Style des icônes sociales */
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+/* Style de la galerie */
+.gallery{
+ background-color: #FCC9FF;
+ display: flex;
+ justify-content: space-around;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 1rem;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+ margin-left: 2rem;
+ margin-right: 2rem;
+}
+/* Style des images de la galerie */
+.homeimg{
+    width: 10rem;
+    box-shadow: 0 4px 8px;
+}
