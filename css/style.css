@@ -576,7 +576,7 @@ body {
     display: block;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -586,45 +586,55 @@ body {
 }
 /* style of navbar */
 
- .navbar_home{
-    width: 100%;
+.navbar_home {
+    width: 100vw;
     position: fixed;
     background-color: #FEF2FD;
     opacity: 1;
     z-index: 10;
 }
 
-.navbar_home .nav_nav{
+.navbar_home .nav_nav {
     width: 100vw;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.navbar_home .nav_nav .logo{
+.navbar_home .logo {
     margin-left: 8%;
-    z-index: 5;
 }
 
 .navbar_home ul {
-    margin-top: 2%;
     list-style: none;
-    margin-left: 30vw;
     padding: 0;
     display: flex;
     gap: 2vw;
-
+    margin-right: 8%;
 }
 
 .navbar_home ul li {
     display: inline;
-    margin-left: 2vw;
 }
 
 .navbar_home ul li a {
     text-decoration: none;
-    font-weight:bold ;
-    color: #2B1B12;
     font-weight: bold;
+    color: #2B1B12;
+}
+
+/* Style de l'icône burger */
+.burger-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 8%;
+}
+
+/* Cacher le menu sur mobile par défaut */
+.nav-links {
+    display: flex;
 }
 
 /* Hero Section */
@@ -766,26 +776,24 @@ main{
 /* La 2 eme section reason to choose */
 .reason_choose {
     display: grid;
-    grid-template-columns: repeat(4, 20vw); 
-    grid-template-rows: repeat(2, 380px); 
-    width: 95vw;
-    column-gap: 2vw;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
 }
 
 /* div conteint titre et texte de choose */
 .reason_choose .chose_text {
-    grid-column: 2 / 4; /* Cela couvre les colonnes 1 et 2 */
-    grid-row: 1; 
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 200px;
+    
 }
 
 .reason_choose .chose_text h1{
-
         font-size: 38px;
         font-weight: bold;
         margin: 0;
@@ -798,7 +806,6 @@ main{
     margin: 0;
     color: black;   
     text-align: center;
-
 }
 
 .icon1{
@@ -811,19 +818,18 @@ main{
 }
 
 .reason_choose .choose_box{
-    grid-column: 2 / 4; /* Cela couvre les colonnes 1 et 2 */
-    grid-row: 1; 
-    justify-content: center;
+   
     display: block;
-    width: 380px;
+    width: 370px;
     margin-block: auto;
-    top: 200px;
-    margin :auto;
-    padding: 50px;  
+    /* top: 200px; */
+    margin-inline: auto;
+    padding: 50px; 
+
 }
 
 .gallery-cell {
-    width: 400px;
+    width: 300px;
     height: 385px;
     margin-right: 15px;
     margin-left: 15px;
@@ -923,7 +929,7 @@ main{
 .gridcarrs{
     
     display: block;
-    width: 390px;
+    width: 385px;
     height: 400px;
     margin-top: 40px;
 }
@@ -1096,7 +1102,7 @@ main{
     width: calc(70% + 150px);
     margin-right: auto;
     margin-left: auto;
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     gap: 75px;
 }
@@ -1157,4 +1163,67 @@ main{
         margin-top: 2rem;
     }
 
+}
+@media  (max-width: 970px) {
+    .desc-card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        gap: 0;
+    } 
+}
+@media  (max-width: 780px) {
+    .desc-card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .card-footer,
+    .card-social-media{
+        width: 50%;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .card-social-media div {
+        justify-content: center;
+        
+    }
+    
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 8%;
+        background-color: #FEF2FD;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Afficher l'icône burger sur mobile */
+    .burger-icon {
+        display: block;
+    }
+
+    /* Masquer les liens de navigation sur les écrans mobiles */
+    .navbar_home ul {
+        display: none;
+    }
+    .grid-section_home{
+        margin-left: 5%;
+    }
 }

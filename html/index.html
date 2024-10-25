@@ -8,9 +8,9 @@
     <title>ImmoView - Find Your Dream Home</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<!-- JavaScript -->
+
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /></head>
 <body>
 
     <!-- Header Section -->
@@ -21,15 +21,26 @@
                 <div class="logo">
                     <img src="../assets/home/logoim.png" alt="Logo de siteweb ImmoView">
                 </div>
-                <ul>
+                
+                <span class="burger-icon">
+                    <i class="fas fa-bars"></i> 
+                </span>
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="catalog.html">Catalog</a></li>
                     <li><a href="details.html">Details</a></li>
                     <li><a href="Testimonials.html">Testimonials</a></li>
                 </ul>
             </div>
-            
         </nav>
+        <script>
+            const burgerIcon = document.querySelector('.burger-icon');
+            const navLinks = document.querySelector('.nav-links');
+        
+            burgerIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
         <section class="hero">
             <div class="hero_text">
                 <h2>𝓕𝓲𝓷𝓭 𝓨𝓸𝓾𝓻 𝓓𝓻𝓮𝓪𝓶 𝓗𝓸𝓶𝓮</h2>
