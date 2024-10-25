@@ -246,7 +246,7 @@ main {
 
 .card-img img{
     width: 100%;
-    border-radius: 18px;
+    border-radius: 18px 18px 0 0;
 }
 .title-icon {
     display: flex;

@@ -14,10 +14,12 @@
     <title>Catalog page</title>
     <link rel="stylesheet" href="../css/catalog.css">
     <link rel="stylesheet" href="../responsive/catalog-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header class="header-cata">
+    <header class="header-cata" data-aos="flip-left">
         <div class="overlay"></div>
         <div class="container">
 
@@ -63,7 +65,8 @@
         </div>
     </header>
     <!-- start box -->
-    <section class="box">
+    <section class="box" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
         <div class="container">
             <div class="box-input">
                 <div class="input-search">
@@ -82,13 +85,13 @@
 
     <main>
         <div class="container">
-            <div class="our-catalog">
+            <div class="our-catalog ">
                <h1>Our Residences</h1> 
             </div>
         </div>
         <section class="grid-section">
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-1.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -107,7 +110,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-2.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -126,7 +129,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img"data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-3.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -145,7 +148,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-4.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -164,7 +167,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-5.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -183,7 +186,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-6.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -202,7 +205,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img"data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-7.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -221,7 +224,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img"data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-8.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -240,7 +243,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" data-aos="zoom-in">
                     <img src="../assets/imgs-catalog/card-9.png" alt="img-card-1">
                 </div>
                 <div class="title-icon">
@@ -260,7 +263,8 @@
             </div>
             <!-- start last box -->
         </section>
-        <SECTion class="last-box">
+        <SECTion class="last-box" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="asking">
                 <h1>Do You Have Any Questions? Get Help From Us</h1>
             </div>
@@ -338,7 +342,15 @@
     </footer>
 
     <!-- End footer -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                once: true,
+                duration: 1000
+            }
+        );
+      </script>
 
 </body>
 
