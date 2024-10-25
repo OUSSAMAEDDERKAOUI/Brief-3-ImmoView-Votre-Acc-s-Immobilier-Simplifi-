@@ -570,7 +570,7 @@ body {
 }
 
 /* style of header */
-header {
+.home_header {
     background-color: #fafafa;
     /* padding: 10px 20px; */
     display: block;
@@ -580,9 +580,8 @@ header {
 }
 
 
-header .logo h1 {
+.home_header .logo h1 {
     margin: 0;
-    /* margin-top: 90px; */
     font-size: 24px;
 }
 /* style of navbar */
@@ -590,13 +589,12 @@ header .logo h1 {
  .navbar_home{
     width: 100%;
     position: fixed;
-    /* background: transparent; */
     background-color: #FEF2FD;
     opacity: 1;
+    z-index: 10;
 }
 
 .navbar_home .nav_nav{
-    /* margin-top: ; */
     width: 100vw;
     display: flex;
     
@@ -636,7 +634,6 @@ header .logo h1 {
     background-size: cover;
     opacity: 1;
     height: 600px;
-    /* background-color: #FEF2FD; */
     padding: 0px;
     text-align: center;
     display: flex;
@@ -756,7 +753,7 @@ main{
 }
 
 .stat-box h3 {
-    font-size: 2vw;
+    font-size: 28px;
     font-weight: bold;
     margin: 0;
     color: #4F3527;
@@ -770,7 +767,7 @@ main{
 .reason_choose {
     display: grid;
     grid-template-columns: repeat(4, 20vw); 
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 380px); 
     width: 95vw;
     column-gap: 2vw;
     margin-left: 5%;
@@ -821,7 +818,7 @@ main{
     width: 380px;
     margin-block: auto;
     top: 200px;
-    /* gap: 1vw; */
+    margin :auto;
     padding: 50px;  
 }
 
@@ -905,37 +902,40 @@ main{
 }
 
 .sect_popu_tit h1{
-    font-size: 38px;
-        font-weight: bold;
-        margin: 0;
-        color: #4F3527;  
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #4F3527;  
 
 }
 
 .grid-section_home{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);*/
-    column-gap: 60px; 
-    display: flex;
-    
-    width: 400px;
-    margin-left: 5%;
+ 
+    display: block;
+    width: 350px;
+    height: 700px;
+    margin-left: 35%;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .gridcarrs{
     
     display: block;
-    width: 450px;
-    height: 600px;
+    width: 390px;
+    height: 400px;
+    margin-top: 40px;
 }
 
 .card_home {
    width: auto;
     background-color: #DBBBDD;
+    height: auto;
     border-radius: 15px;
     /* margin-bottom: 9vh; */
     color: #4F3527;
+    z-index: 0;
 }
 
 .card_home .card-img img{
