@@ -261,10 +261,22 @@
     }
 
     .navlist2{
-        display: none;
-        background-color: #de0d0d;
+       display: none;
+        /*background-color: #de0d0d;
         justify-content: center;
-        margin: 0 auto;
+        margin: 0 auto; */
+         float: right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        position: absolute;
+        right: 70px;
+        background-color: #DBBBDD;
+        top: 55px;
+
        }
     
        
