@@ -7,7 +7,10 @@
 
     <title>ImmoView - Find Your Dream Home</title>
     <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /></head>
 <body>
 
     <!-- Header Section -->
@@ -18,19 +21,31 @@
                 <div class="logo">
                     <img src="../assets/home/logoim.png" alt="Logo de siteweb ImmoView">
                 </div>
-                <ul>
+                
+                <span class="burger-icon">
+                    <i class="fas fa-bars"></i> 
+                </span>
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="catalog.html">Catalog</a></li>
                     <li><a href="details.html">Details</a></li>
                     <li><a href="Testimonials.html">Testimonials</a></li>
                 </ul>
             </div>
-            
         </nav>
+        <script>
+            const burgerIcon = document.querySelector('.burger-icon');
+            const navLinks = document.querySelector('.nav-links');
+        
+            burgerIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
         <section class="hero">
             <div class="hero_text">
-                <h2>Find Your Dream Home</h2>
+                <h2>𝓕𝓲𝓷𝓭 𝓨𝓸𝓾𝓻 𝓓𝓻𝓮𝓪𝓶 𝓗𝓸𝓶𝓮</h2>
                 <p>Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision.</p>
+                <p style="font-size: 4rem !important;">𝓲𝓷</p>
             </div>
             <br><br>
             
@@ -38,21 +53,21 @@
        
     </header>
     <div class="home_box">
-        <h1>ImmoView</h1>
+        <h1>ＩｍｍｏＶｉｅｗ</h1>
     </div>
 
     <!-- Main Section -->
     <main>
         <!-- Stats Section -->
         <section class="stats">
-             <div class="stat_im"><img src="../assets/home/luxury.png" alt=""></div>
+             <div class="stat_im"><img src="../assets/home/luxury.png" alt="luxury home"></div>
             <div class="stat-boxes">
                 <h2>We Help You To Find Your Dream Home</h2>
-                <pre>
-        From cozy cottages to luxurious estates, our
-        dedicated team guides you through every step of the
+                <p>
+        From cozy cottages to luxurious estates, our <br>
+        dedicated team guides you through every step of the <br>
         journey, ensuring your dream home becomes a reality
-                    </pre>
+                    </p>
                 <div class="statti">
                     <div class="stat-box">
                         <h3>8K+</h3>
@@ -74,32 +89,39 @@
                 <h1>Why Choose Us</h1>
                 <p>Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service</p>
             </div>
-            <div class="choose_div1">
-                <div class="icon1"><img src="../assets/icons/map_pin.png" alt="une icone de map pin"></div>
-                <h4>Expert Guidance</h4>
-                <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
-            </div>
-            <div class="choose_div2">
-                <div class="icon1"><img src="../assets/icons/person.png" alt="une icone de map pin"></div>
-                <h4>Personalized Service</h4>
-                <p>Our services adapt to your unique needs, making your journey stress-free</p>
-            </div>
-            <div class="choose_div3">
-                <div class="icon1"><img src="../assets/icons/document.png" alt="une icone de map pin"></div>
-                <h4>Tranparent Process</h4>
-                <p>Stay informed with our clear and honest approach to buying your home</p>
-            </div>
-            <div class="choose_div4">
-                <div class="icon1"><img src="../assets/icons/handshake.png" alt="une icone de map pin"></div>
-                <h4>Exceptional Support</h4>
-                <p>Providing peace of mind with our responsive and attentive customer service</p>
-            </div>
-            <div class="sect_popu_tit"><h1>Our Popular Residences</h1></div>
-
+           <div class="choose_box carousel-container js-flickity"
+           data-flickity-options='{ "wrapAround": false  ,"autoPlay": 3000 }'>
+            
+        <div class="choose_div1 ">
+            <div class="icon1"><img src="../assets/icons/map_pin.png" alt="une icone de map pin"></div>
+            <h4>Expert Guidance</h4>
+            <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
+        </div>
+        <div class="choose_div2 ">
+            <div class="icon1"><img src="../assets/icons/person.png" alt="une icone de map pin"></div>
+            <h4>Personalized Service</h4>
+            <p>Our services adapt to your unique needs, making your journey stress-free</p>
+        </div>
+        <div class="choose_div3 ">
+            <div class="icon1"><img src="../assets/icons/document.png" alt="une icone de map pin"></div>
+            <h4>Tranparent Process</h4>
+            <p>Stay informed with our clear and honest approach to buying your home</p>
+        </div>
+        <div class="choose_div4 ">
+            <div class="icon1"><img src="../assets/icons/handshake.png" alt="une icone de map pin"></div>
+            <h4>Exceptional Support</h4>
+            <p>Providing peace of mind with our responsive and attentive customer service</p>
+        </div></div>
+            
+            
+            
         </section>
 <!-- SECTION POPUlar -->
-<section class="grid-section">
-    <div class="card">
+<section class="grid-section_home">
+    <div class="sect_popu_tit"><h1>Our Popular Residences</h1></div>
+    <div class="gridcarrs carousel-container js-flickity"
+    data-flickity-options='{ "wrapAround": false ,"autoPlay": 3000 }'>
+    <div class="card_home">
         <div class="card-img">
             <img src="../assets/imgs-catalog/card-1.png" alt="img-card-1">
         </div>
@@ -118,7 +140,7 @@
             <h3>$2,500,000</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card_home">
         <div class="card-img">
             <img src="../assets/imgs-catalog/card-2.png" alt="img-card-1">
         </div>
@@ -137,7 +159,7 @@
             <h3>$8,800,000</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card_home">
         <div class="card-img">
             <img src="../assets/imgs-catalog/card-3.png" alt="img-card-1">
         </div>
@@ -156,6 +178,8 @@
             <h3>$3,700,000</h3>
         </div>
     </div>
+</div>
+    
 </section>/
 
 
@@ -173,37 +197,39 @@
                 </div>
             </div>
     
-            <div class="faq-grid">
+            <div class="faq-grid "">
+                
                 <div class="faq-item">
-                    <span>📧</span>
+                    <span><!--📧--><img src="../assets/icons/icon1.png" alt="mail_icon"></span>
                     <h3>How do I change my account email?</h3>
                     <p>You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.</p>
                 </div>
                 <div class="faq-item">
-                    <span>🛒</span>
+                    <span><img src="../assets/icons/icon2.png"  alt="mail_icon"></span>
                     <h3>What should I do if my payment fails?</h3>
                     <p>If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited, it will be credited back within 7-10 days.</p>
                 </div>
                 <div class="faq-item">
-                    <span>❌</span>
+                    <span><img src="../assets/icons/icon3.png" alt="mail_icon"></span>
                     <h3>What is your cancellation policy?</h3>
                     <p>You can now cancel an order when it is packed/shipped. Any amount paid will be credited into the same payment mode within 7-10 days.</p>
                 </div>
                 <div class="faq-item">
-                    <span>📦</span>
+                    <span><img src="../assets/icons/icon4.png" alt="mail_icon"></span>
                     <h3>How do I check order delivery status?</h3>
                     <p>Please tap on "My Orders" section under the main menu to check your order status.</p>
                 </div>
                 <div class="faq-item">
-                    <span>💸</span>
+                    <span><img src="../assets/icons/icon5.png" alt="mail_icon"></span>
                     <h3>What is Instant Refunds?</h3>
                     <p>Upon successful return, Mytika will refund to your source account or chosen method instantly. It is not available in a few select pin codes.</p>
                 </div>
                 <div class="faq-item">
-                    <span>🏷️</span>
+                    <span><img src="../assets/icons/icon6.png" alt="mail_icon"></span>
                     <h3>How do I apply a coupon on my order?</h3>
                     <p>You can apply a coupon before placing your order in the cart. Valid coupons are available under "My Coupons" section.</p>
                 </div>
+                
             </div>
     
             <div class="faq-footer">
@@ -213,52 +239,66 @@
         </section>
     </main>
 
-<footer>
-    <div class="footer-container">
+<!-- start footer -->
+<footer class="footer-catalog">
+    <SECTion class="container-footer">
+        <div class="desc-card">
+            <div class="footer-logo">
+                <img src="../assets/imgs-catalog/logo.png" alt="principale logo of main page">
+            </div>
+            <p> Bringing you closer to your dream home, one click at a time.</p>
+
+        </div>
+        
+            <div class="card-footer">
+                <h2>About</h2>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Careers</li>
+                    <li>Our Team</li>
+                    <li>Resources</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <h2>Support</h2>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
        
-        <div class="footer-logo">
-            <img src="../assets/home/logoim.png" alt="ImmoView Logo">
-            <p>Bringing you closer to your dream home, one click at a time.</p>
+        
+   
+            <div class="card-footer">
+                <h2>Find Us</h2>
+                <ul>
+                    <li>Events</li>
+                    <li>Locations</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="card-social-media">
+                <h2>Our Social</h2>
+                <div>
+                    <img src="../assets/imgs-catalog/insta.png" alt="instagram image">
+                    <p>Instagram</p>
+                </div>
+                <div>
+                    <img src="../assets/imgs-catalog/fb.png" alt="facebook image ">
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <img src="../assets/imgs-catalog/twitter.png" alt="twitter">
+                    <p>twitter(X)</p>
+                </div>
+       
+      
+
         </div>
 
-    
-        <div class="footer-links">
-            <div class="footer-column">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Resources</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Find Us</h3>
-                <ul>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Our Social</h3>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter (X)</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </SECTion>
 </footer>
 
 
