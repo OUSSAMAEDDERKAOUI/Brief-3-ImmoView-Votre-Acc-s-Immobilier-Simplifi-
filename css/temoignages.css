@@ -110,7 +110,7 @@
         background-size:cover;
         grid-row: 15/20;
         grid-column:3/17;
-        border:solid 3px  rgb(0, 187, 255);
+        border:solid 3px  red;
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
@@ -119,12 +119,6 @@
         gap: 6%;
         
 
-
-
-
-
-
-        
     }
     #testimonials body main .backrounge-color-item section{
         width: 97%;
