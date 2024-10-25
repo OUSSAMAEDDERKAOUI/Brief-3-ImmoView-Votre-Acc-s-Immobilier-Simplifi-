@@ -1,5 +1,5 @@
 /* Réinitialisation des marges et des paddings pour tous les éléments */
-*{
+ *{
     margin: 0;
     padding: 0;
 }
