@@ -7,6 +7,9 @@
 
     <title>ImmoView - Find Your Dream Home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
 
@@ -46,7 +49,7 @@
     <main>
         <!-- Stats Section -->
         <section class="stats">
-             <div class="stat_im"><img src="../assets/home/luxury.png" alt=""></div>
+             <div class="stat_im"><img src="../assets/home/luxury.png" alt="luxury home"></div>
             <div class="stat-boxes">
                 <h2>We Help You To Find Your Dream Home</h2>
                 <p>
@@ -75,31 +78,38 @@
                 <h1>Why Choose Us</h1>
                 <p>Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service</p>
             </div>
-            <div class="choose_div1">
-                <div class="icon1"><img src="../assets/icons/map_pin.png" alt="une icone de map pin"></div>
-                <h4>Expert Guidance</h4>
-                <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
-            </div>
-            <div class="choose_div2">
-                <div class="icon1"><img src="../assets/icons/person.png" alt="une icone de map pin"></div>
-                <h4>Personalized Service</h4>
-                <p>Our services adapt to your unique needs, making your journey stress-free</p>
-            </div>
-            <div class="choose_div3">
-                <div class="icon1"><img src="../assets/icons/document.png" alt="une icone de map pin"></div>
-                <h4>Tranparent Process</h4>
-                <p>Stay informed with our clear and honest approach to buying your home</p>
-            </div>
-            <div class="choose_div4">
-                <div class="icon1"><img src="../assets/icons/handshake.png" alt="une icone de map pin"></div>
-                <h4>Exceptional Support</h4>
-                <p>Providing peace of mind with our responsive and attentive customer service</p>
-            </div>
-            <div class="sect_popu_tit"><h1>Our Popular Residences</h1></div>
-
+           <div class="choose_box carousel-container js-flickity"
+           data-flickity-options='{ "wrapAround": false  ,"autoPlay": 3000 }'>
+            
+        <div class="choose_div1 ">
+            <div class="icon1"><img src="../assets/icons/map_pin.png" alt="une icone de map pin"></div>
+            <h4>Expert Guidance</h4>
+            <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
+        </div>
+        <div class="choose_div2 ">
+            <div class="icon1"><img src="../assets/icons/person.png" alt="une icone de map pin"></div>
+            <h4>Personalized Service</h4>
+            <p>Our services adapt to your unique needs, making your journey stress-free</p>
+        </div>
+        <div class="choose_div3 ">
+            <div class="icon1"><img src="../assets/icons/document.png" alt="une icone de map pin"></div>
+            <h4>Tranparent Process</h4>
+            <p>Stay informed with our clear and honest approach to buying your home</p>
+        </div>
+        <div class="choose_div4 ">
+            <div class="icon1"><img src="../assets/icons/handshake.png" alt="une icone de map pin"></div>
+            <h4>Exceptional Support</h4>
+            <p>Providing peace of mind with our responsive and attentive customer service</p>
+        </div></div>
+            
+            
+            
         </section>
 <!-- SECTION POPUlar -->
 <section class="grid-section_home">
+    <div class="sect_popu_tit"><h1>Our Popular Residences</h1></div>
+    <div class="gridcarrs carousel-container js-flickity"
+    data-flickity-options='{ "wrapAround": false ,"autoPlay": 3000 }'>
     <div class="card_home">
         <div class="card-img">
             <img src="../assets/imgs-catalog/card-1.png" alt="img-card-1">
@@ -157,6 +167,8 @@
             <h3>$3,700,000</h3>
         </div>
     </div>
+</div>
+    
 </section>/
 
 
@@ -174,7 +186,8 @@
                 </div>
             </div>
     
-            <div class="faq-grid">
+            <div class="faq-grid "">
+                
                 <div class="faq-item">
                     <span><!--📧--><img src="../assets/icons/icon1.png" alt="mail_icon"></span>
                     <h3>How do I change my account email?</h3>
@@ -205,6 +218,7 @@
                     <h3>How do I apply a coupon on my order?</h3>
                     <p>You can apply a coupon before placing your order in the cart. Valid coupons are available under "My Coupons" section.</p>
                 </div>
+                
             </div>
     
             <div class="faq-footer">
@@ -214,52 +228,66 @@
         </section>
     </main>
 
-<footer>
-    <div class="footer-container">
+<!-- start footer -->
+<footer class="footer-catalog">
+    <SECTion class="container-footer">
+        <div class="desc-card">
+            <div class="footer-logo">
+                <img src="../assets/imgs-catalog/logo.png" alt="principale logo of main page">
+            </div>
+            <p> Bringing you closer to your dream home, one click at a time.</p>
+
+        </div>
+        
+            <div class="card-footer">
+                <h2>About</h2>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Careers</li>
+                    <li>Our Team</li>
+                    <li>Resources</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <h2>Support</h2>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
        
-        <div class="footer-logo">
-            <img src="../assets/home/logoim.png" alt="ImmoView Logo">
-            <p>Bringing you closer to your dream home, one click at a time.</p>
+        
+   
+            <div class="card-footer">
+                <h2>Find Us</h2>
+                <ul>
+                    <li>Events</li>
+                    <li>Locations</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="card-social-media">
+                <h2>Our Social</h2>
+                <div>
+                    <img src="../assets/imgs-catalog/insta.png" alt="instagram image">
+                    <p>Instagram</p>
+                </div>
+                <div>
+                    <img src="../assets/imgs-catalog/fb.png" alt="facebook image ">
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <img src="../assets/imgs-catalog/twitter.png" alt="twitter">
+                    <p>twitter(X)</p>
+                </div>
+       
+      
+
         </div>
 
-    
-        <div class="footer-links">
-            <div class="footer-column">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Resources</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Find Us</h3>
-                <ul>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Our Social</h3>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter (X)</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </SECTion>
 </footer>
 
 
