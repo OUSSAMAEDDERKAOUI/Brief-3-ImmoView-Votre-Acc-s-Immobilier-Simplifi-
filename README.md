@@ -4,6 +4,116 @@ Description
 ImmoView revolutionizes the way you search and purchase real estate properties by offering a seamless, responsive, and optimized user experience across all devices. Our platform combines intuitive design, interactive features, and accessibility to make your real estate journey smooth and efficient. From zoning and wireframes to final deployment on GitHub Pages, ImmoView is designed to provide you with the best in class service for all your property needs.
 
 
+##Roles & Missions
+#Design and Mockup (D & M)
+Zoning: Creating a zoning plan to organize the main pages.
+
+Wireframe: Creating wireframes.
+
+Mockup: Designing responsive mockups for desktop and mobile.
+
+Prototyping: Developing interactive prototypes to validate the mockups before development.
+
+#Development
+Organized Project Structure:
+
+assets/: Folder to store all static files such as images, icons, and videos.
+
+css/: Folder containing style files, with a separation between global styles, responsive styles, and animations.
+
+js/: Folder for JavaScript files, with modular management (e.g., carrousel.js, form-validation.js).
+
+fonts/: Folder for custom fonts.
+
+Responsive Design: Using media queries to ensure the site is optimized for all devices.
+
+Burger Menu: Integrating a functional burger menu for navigation on small screens.
+
+FAQ: Developing an FAQ section to help users find answers quickly.
+
+Image Carousel: Implementing a carousel to display real estate properties.
+
+CSS Animations: Creating CSS animations to make the interface interactive.
+
+Semantic HTML: Using appropriate semantic HTML tags.
+
+Accessibility: Ensuring the site is accessible to all users, including those with specific needs, by adhering to ARIA standards.
+
+#Performance and Optimization
+Lighthouse Performance: Ensuring a high score in Google Lighthouse by optimizing page load speed, responsiveness, and interactivity.
+
+SEO: Using meta tags, titles, and descriptions for better natural search engine ranking, along with optimized HTML structure.
+
+#Project Management
+Planning via GitHub Project: Managing the project using GitHub to organize and track tasks.
+
+Planning Poker: A method used to estimate tasks collaboratively.
+
+Branching on GitHub: Using a branch system to develop different features before merging them.
+
+Hosting: Deploying the project on GitHub Pages.
+
+#Pages to Develop
+Home Page
+Presenting a selection of featured properties with an image (or video) carousel.
+
+An introduction section on ImmoView's mission and an overview of services.
+
+A static FAQ section to address common user questions.
+
+Links to other pages (Catalogue, Property Details, Testimonials).
+
+Catalogue Page
+Displaying a list of properties with images (or videos) and descriptions for each property.
+
+A grid presentation, with filtering options (location, price, property type) at the top.
+
+Each property has a clickable link directing to the Property Details page.
+
+Property Details Page
+Providing a complete description of the property (size, number of rooms, price, features).
+
+An image gallery to view multiple photos of the property.
+
+An "About the Neighborhood" section with information on the location, amenities, and nearby services.
+
+An inquiry form for users to ask questions or schedule a visit.
+
+Testimonials Page
+Presenting customer feedback with quotes and ratings from previous clients.
+
+A section to submit a testimonial, including a simple validation form for the name, email, and content.
+
+A gallery of images showing satisfied customers in their new properties.
+
+Contact Page (Bonus)
+A form with fields for name, email, phone, subject, and message.
+
+Direct contact information for the agency (phone number and email address).
+
+A section with links to social media.
+
+A map showing the agency's location.
+
+#Screen Resolutions
+Large Desktop Screen: Starting at 1280px wide.
+
+Small Desktop Screen: From 1024px to 1279px wide.
+
+Tablet Portrait: From 768px to 1023px wide.
+
+Mobile (portrait): Up to 767px wide.
+
+Mobile (landscape): From 768px to 1023px wide.
+
+Tablet Landscape: From 1024px to 1279px wide.
+
+#Pedagogical Methods
+Teamwork (By Squad): You have 5 days to complete this.
+
+Brief Assignment Date: 21/10/2024 at 09:00.
+
+Submission Deadline: 25/10/2024 before 23:59.
 
 ## Acknowledgements
 We would like to express our gratitude to all the people and organizations who contributed to the completion of this project:
