@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ImmoView vous aide à trouver la maison de vos rêves parmi une sélection exclusive de propriétés. Explorez notre catalogue et bénéficiez des meilleures offres immobilières avec l'aide de nos agents de confiance." />
@@ -17,8 +19,10 @@
         <nav>
           <img src="/assets/img detait/logo.png" alt="logo" id="logo">
            <!--buger mune-->
-   <img src="/assets/img detait/burger.png" alt="buger" id="buger">
-   <!--buger mune-->
+
+          <img src="/assets/img detait/burger.png" alt="buger" id="buger" onclick="burgerfonc()">
+        
+    <!--buger mune-->
         <div class="navlist">
             <a href="">Home</a>
             <a href="">Catalog</a>  
@@ -26,6 +30,14 @@
             <a href="">Testimonial</a>
         </div>
      </nav>
+     <!--nav bar for buger menu-->
+     <div class="navlist2">
+        <a href="">Home</a>
+        <a href="">Catalog</a>  
+        <a href="">Détails</a>
+        <a href="">Testimonial</a>
+    </div>
+    <!--nav bar for buger mune-->
     <!-- end of navigation bar-->
    
      <div class="main-header">
@@ -51,8 +63,20 @@
                 <H6>500 m2</H6>
             </div>
         </div>
-        
-         <div class="textbody2">
+
+
+         <!--carosel use flickity labary-->
+
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (1).png" alt="room1"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (2).png" alt="room2"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (3).png" alt="room3"></div>
+            <div class="carousel-cell"><img src="/assets/img detait/Image (3).png" alt="room4"></div>
+
+        </div>
+
+        <!--carosel-->
+        <div class="textbody2">
             <p>A Gressan, à deux pas du centre d'Aoste, nous vous proposons une propriété personnalisable sur plusieurs étages, composée de 6 pièces grandes et lumineuses, une grande terrasse, un jardin exclusif parfait pour satisfaire les différents besoins d'une famille.
                 L'exposition sur 4 côtés garantit une lumière naturelle constante et une vue panoramique sur toutes les faces de la maison.
             </p>
