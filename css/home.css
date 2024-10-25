@@ -71,7 +71,15 @@ body {
     font-weight: bold;
     color: #2B1B12;
 }
-
+.navbar_home ul li a a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+.navbar_home ul li a a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
 /* Style de l'icône burger */
 .burger-icon {
     display: none;
