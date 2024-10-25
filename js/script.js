@@ -1,3 +1,4 @@
+/* auto show images */
 var i = 0;
 var images = [];
 var time = 3000;
@@ -22,10 +23,10 @@ function changeImg() {
 }
 
 window.onload = changeImg;
-
+/** end of auto show images */
 /*********************************************************************************************************** */
 
-
+/**BURGER MUNE */
 function burgerfonc() {
     var w = window.innerWidth;
     const but1 = document.getElementsByClassName("navlist2")[0];
@@ -45,3 +46,6 @@ window.addEventListener('resize', function(){
        but1.style.display = "none"
     }
 })
+
+/** end of burger mune */
+/********************************************************************************************/

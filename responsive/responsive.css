@@ -1,4 +1,4 @@
-#detait .carousel-cell{
+ .carousel-cell{
     width: 70%;
     counter-increment: carousel-cell;
   }
@@ -10,7 +10,7 @@
 
 /*RESPOSIFE */
   /* buger*/
-  #buger{
+    #buger{
     width: 3rem;
     display: none;
    }
@@ -24,7 +24,7 @@
       #main-image{
         display: none;
       }
-      .navlist{
+    .navlist{
         display: none;
      }
      #buger{
@@ -40,26 +40,26 @@
         gap: 2rem;
     }
 
-    .textbody1, .textbody2 {
+     .textbody1, .textbody2 {
         width: 90%;
         margin: 0 auto;
     }
-    .textbody3{
+     .textbody3{
     width: 60vh;
     }
-    .info-re{
+     .info-re{
     margin-bottom: 0;
     align-items: center;
     }
-  .footer-section{
+     .footer-section{
     display: none;
   }
-    .headbody {
+  .headbody {
         flex-direction: column;
         align-items: center;
     }
     
-    .main-carousel{
+   .main-carousel{
         display: block;
     }
 
@@ -77,7 +77,7 @@
         font-size: 17px;
         position: absolute;
         right: 70px;
-        background-color: #FCC9FF;
+        background-color: #DBBBDD;
         top: 55px;
        }
     
