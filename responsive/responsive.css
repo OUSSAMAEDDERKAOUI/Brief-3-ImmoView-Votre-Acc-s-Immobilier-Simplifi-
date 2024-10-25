@@ -1,3 +1,13 @@
+#detait .carousel-cell{
+    width: 70%;
+    counter-increment: carousel-cell;
+  }
+  .main-carousel{
+    display: none;
+  }
+
+
+
 /*RESPOSIFE */
   /* buger*/
   #buger{
