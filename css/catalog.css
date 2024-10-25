@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,8 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
+    max-width: 1114px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -20,8 +22,32 @@ body {
 
 }
 
+.box .container {
+    width: 95%;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.box .input-search {
+    width: 100%;
+}
+
+.box form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 40px;
+ }
+
+.nav-bar {
+    position: relative;
+}
+
+
+
 /* start header  */
-header {
+.header-cata {
     background-image: url("../assets/imgs-catalog/BACK-DESC.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +69,7 @@ header {
     background-color: rgba(255, 255, 255, .26);
 }
 
-.nav-bar li a {
+/* .nav-bar li a {
     text-decoration: none;
 }
 
@@ -52,9 +78,42 @@ header {
     gap: 25px;
     list-style-type: none;
     margin: 0;
+    margin-right: 50%;
     padding: 0;
+} */
+/* ------------------------------------------------------------ */
+.nav-bar {
+    /* overflow: hidden; */
+  }
+  .nav-bar ul {
+list-style-type: none;
 }
 
+.nav-bar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.nav-bar a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .nav-bar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .nav-bar .icon {
+    display: none;
+  }
+  
+/* --------------------------------------------------------------------- */
 .center-title {
     display: flex;
     align-items: center;
@@ -93,7 +152,7 @@ header {
     width: 120px;
     height: 40px;
     border-radius: 8px;
-    ;
+    
     background-color: #2B1B12;
     color: white;
     cursor: pointer;
@@ -104,7 +163,6 @@ nav {
     justify-content: space-between;
     justify-items: center;
 }
-
 
 /* end header */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -128,7 +186,6 @@ nav {
     text-align: center;
     width: 240px;
     height: 40px;
-    margin: 25px;
 }
 
 .box-input form button {
@@ -157,15 +214,24 @@ main {
     font-size: xx-large;
     font-weight: 500;
     text-align: center;
+        
 }
 
+
+    /* ----------------------END media card----------------------------- */
+
+    
+    
+
+/* -----------------end me------------------------ */
 .grid-section{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(3 , auto);
     gap: 10px;
     margin-top: 10px;
 }
+
 
 
 
@@ -180,7 +246,7 @@ main {
 
 .card-img img{
     width: 100%;
-    border-radius: 18px;
+    border-radius: 18px 18px 0 0;
 }
 .title-icon {
     display: flex;
@@ -272,9 +338,11 @@ main {
     font-size: large;
 }
 /* END last box */
+
 /* -------------------------------------------------------------------------------------- */
+
 /* :start footer */
-footer{
+.footer-catalog{
     background-color: #DBBBDD;
 }
 .container-footer{
@@ -314,6 +382,7 @@ footer{
     margin: 15px 5px;
     
 }
+
 
 /* End footer */
 /* End main  */
