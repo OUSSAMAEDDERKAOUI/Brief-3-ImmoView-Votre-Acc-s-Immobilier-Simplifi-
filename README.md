@@ -160,7 +160,7 @@ Abdrazak Imily
 Together, we bring a diverse set of skills and perspectives, working collaboratively to create innovative and responsive web applications. Our journey at YouCode has equipped us with the tools and knowledge to tackle real-world challenges, and we are excited to apply our skills in this project.
 
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Javascript, HTML, CSS...;
 
 
 ## License
