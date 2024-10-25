@@ -8,6 +8,18 @@
     font-family: Arial, sans-serif;
 }
 
+/* imily details */
+
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+*{
+    margin: 0;
+    padding: 0;
+}
+   body{
+    background-color: #FEE9E7;
+    font-family: Arial, sans-serif;
+}
+
 /* navigation bar style*/
  nav{
     margin-top: 1rem;
@@ -195,3 +207,11 @@
     width: 10rem;
     box-shadow: 0 4px 8px;
 }
+
+.carousel-cell{
+    width: 70%;
+    counter-increment: carousel-cell;
+  }
+  .main-carousel{
+    display: none;
+  }
