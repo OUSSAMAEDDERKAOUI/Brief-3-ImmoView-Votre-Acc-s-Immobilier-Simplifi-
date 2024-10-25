@@ -10,7 +10,7 @@ We would like to express our gratitude to all the people and organizations who c
 
 Oussama Edderkaoui,Nadia nmissi, Hamza Lakroun, and Abdrazak imily: Students at YouCode School of Development, for their collaboration and hard work on this brief.
 
-Houssni: Trainer, for his guidance and continuous support throughout the project.
+Houssni Ouchad: coach, for his guidance and continuous support throughout the project.
 
 Development Team: For their dedication and exceptional technical skills.
 
