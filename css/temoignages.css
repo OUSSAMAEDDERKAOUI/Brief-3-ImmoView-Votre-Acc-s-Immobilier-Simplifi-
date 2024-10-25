@@ -110,7 +110,7 @@
         background-size:cover;
         grid-row: 15/20;
         grid-column:3/17;
-        border:solid 3px  red;
+        border:solid 3px  rgb(0, 187, 255);
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
@@ -1162,11 +1162,6 @@ main{
     text-decoration: none;
     font-weight: bold;
 }
-
-
-
-
-
 
 .email-input {
     margin: 1.5rem 0;
